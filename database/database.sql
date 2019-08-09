@@ -6,7 +6,7 @@ USE bamazon;
 CREATE TABLE departments(
     department_id INTEGER NOT NULL AUTO_INCREMENT,
     department_name VARCHAR(50) NOT NULL,
-    over_load_costs FLOAT NOT NULL DEFAULT 0,
+    over_head_costs FLOAT NOT NULL DEFAULT 0,
     PRIMARY KEY (department_id)
 );
 
@@ -20,7 +20,7 @@ CREATE TABLE products(
     PRIMARY KEY (item_id)
 );
 
-INSERT INTO departments (department_name, over_load_costs)
+INSERT INTO departments (department_name, over_head_costs)
 VALUES  ('Appliances', 50000),
         ('Electronics',40000),
         ('Musical Instruments',30000);
