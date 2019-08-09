@@ -11,6 +11,18 @@ function Database() {
         database: process.env.DB_DATABASE    
     });
 
+    this.exec = (query, callback) => {
+        this.connection.connect(err => {
+            if (err) throw err;
+            var qry = this.connection.query(query, (err, res) => {
+                if (err) throw err;
+                callback(res);
+                this.connection.end();
+            });
+            //console.log(qry.sql);
+        });
+    }
+
     this.read = (query, callback) => {
         this.connection.connect(err => {
             if (err) throw err;
@@ -37,11 +49,12 @@ function Database() {
     this.update = (table, fields, conditions, callback) => {
         this.connection.connect(err => {
             if (err) throw err;
-            this.connection.query(`UPDATE ${table} SET ? WHERE ?`, [fields, conditions], (err, res) => {
+            var qry = this.connection.query(`UPDATE ${table} SET ? WHERE ?`, [fields, conditions], (err, res) => {
                 if (err) throw err;
                 callback(res);
                 this.connection.end();
             });
+            console.log(qry.sql);
         });
     }
 
