@@ -4,11 +4,13 @@ var Database = require("./database/database");
 
 var listAllProducts = () => {
     var db = new Database();
-    var sql = 'SELECT item_id as ID, department_name as DEPARTMENT, product_name as PRODUCT, price as PRICE, stock_quantity as STOCK ';
-    sql += 'FROM products p ';
-    sql += 'INNER JOIN departments d ON d.department_id = p.department_id ';
-    sql += 'ORDER BY department_name, product_name';
-
+    var sql = [
+        'SELECT item_id as ID, department_name as DEPARTMENT, product_name as PRODUCT, price as PRICE, stock_quantity as STOCK',
+        'FROM products p',
+        'INNER JOIN departments d ON d.department_id = p.department_id',
+        'ORDER BY department_name, product_name'
+    ].join(" ");
+    
     db.read(sql, res => {
         console.log();
         console.table(res);
