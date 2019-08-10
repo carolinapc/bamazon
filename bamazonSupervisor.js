@@ -40,12 +40,12 @@ var addDepartment = () => {
         {
             type: "input",
             name: "name",
-            message: "Department name"
+            message: "Department name:"
         },
         {
             type: "input",
             name: "costs",
-            message: "Over load costs",
+            message: "Over load costs:",
             validate: input => {
                 return (!isNaN(input));
             }

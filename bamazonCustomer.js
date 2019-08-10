@@ -60,7 +60,7 @@ var promptCustomer = () => {
         {
             type: "input",
             name: "product_id",
-            message: "Type the Product ID you wish to buy",
+            message: "Type the Product ID you wish to buy:",
             validate: input => {
                 return (!isNaN(input));
             }

@@ -85,7 +85,7 @@ var addToInventory = () => {
         {
             type: "input",
             name: "product_id",
-            message: "Type the Product ID you wish to add items",
+            message: "Type the Product ID you wish to add items:",
             validate: input => {
                 return (!isNaN(input));
             }
@@ -111,18 +111,18 @@ var addNewProduct = () => {
             {
                 type: "input",
                 name: "name",
-                message: "Product name"
+                message: "Product name:"
             },
             {
                 type: "list",
                 name: "department_id",
-                message: "Select an department",
+                message: "Select an department:",
                 choices: res
             },     
             {
                 type: "input",
                 name: "price",
-                message: "Price",
+                message: "Price:",
                 validate: input => {
                     return (!isNaN(input));
                 }
@@ -130,7 +130,7 @@ var addNewProduct = () => {
             {
                 type: "input",
                 name: "quantity",
-                message: "Stock quantity",
+                message: "Stock quantity:",
                 validate: input => {
                     return (!isNaN(input));
                 }
@@ -148,7 +148,7 @@ var showMenu = () => {
         {
             type: "list",
             name: "choice",
-            message: "Select an option",
+            message: "Select an option:",
             choices: [
                 {
                     name:"View Products for Sale",
