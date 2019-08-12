@@ -4,7 +4,7 @@ An CLI Amazon-like storefront using Node.js. The app will take in orders from cu
 
 ## Instalation
 
-Node.js is required! Donwload here: https://nodejs.org/en/
+Node.js is required! Download here: https://nodejs.org/en/
 
 Run the following command on your terminal
 ```
