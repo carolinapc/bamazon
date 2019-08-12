@@ -22,21 +22,21 @@ DB_DATABASE=your_db_name
 
 ## Usage
 
-Customer View
+*Customer View*
 
 ````
 node bamazonCustomer.js
 ````
 [Watch the video](https://drive.google.com/file/d/1wPah1upJYLPDdZr_5wjIhaX2oLu_sowd/view)
 
-Manager View
+*Manager View*
 
 ````
 node bamazonManager.js
 ````
 [Watch the video](https://drive.google.com/file/d/15uc0LnRrKWkXpHqhvekWHuf63obRmsNE/view)
 
-Supervisor View
+*Supervisor View*
 
 ````
 node bamazonSupervisor.js
