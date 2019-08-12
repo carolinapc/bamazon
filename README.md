@@ -21,3 +21,24 @@ DB_DATABASE=your_db_name
 ```
 
 ## Usage
+
+Customer View
+
+````
+node bamazonCustomer.js
+````
+[Watch the video](https://drive.google.com/file/d/1wPah1upJYLPDdZr_5wjIhaX2oLu_sowd/view)
+
+Manager View
+
+````
+node bamazonManager.js
+````
+[Watch the video](https://drive.google.com/file/d/15uc0LnRrKWkXpHqhvekWHuf63obRmsNE/view)
+
+Supervisor View
+
+````
+node bamazonSupervisor.js
+````
+[Watch the video](https://drive.google.com/file/d/1L1PwZP9wdbu9ixY5POpJbcVPxne3vYrk/view)
