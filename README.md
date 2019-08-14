@@ -19,6 +19,7 @@ DB_USER=your_user
 DB_PWD=your_password
 DB_DATABASE=your_db_name
 ```
+Run the *database/schema.sql* file on your MySQL Server
 
 ## Usage
 
